@@ -1,15 +1,10 @@
-import { Header } from "./components/Header";
-import { Contenido } from "./components/Contenido";
-import Footer from "./components/Footer";
+import { CounterPage } from "./pages/CounterPage";
+import { FirstPage } from "./pages/FirstPage";
+import { SecongPage } from "./pages/SecondPage";
+import ThirdPage from "./pages/ThirdPage";
 
 function App() {
-  return (
-    <main className="main_container">
-      <Header />
-      <Contenido />
-      <Footer />
-    </main>
-  );
+  return <CounterPage />;
 }
 
 export default App;
