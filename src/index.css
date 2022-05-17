@@ -84,3 +84,27 @@ button {
 button:hover{
   background: white;
 }
+
+.box_container{
+  width: 350px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin{
+  background-color: green;
+}
+
+.no_admin{
+  background-color: red;
+}
+
+input{
+  width: 300px;
+  font-size: 18px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: none;
+}
