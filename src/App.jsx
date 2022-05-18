@@ -6,9 +6,10 @@ import ThirdPage from "./pages/ThirdPage";
 import { UserStatePage } from "./pages/UserStatePage";
 import { UserInputStatePage } from "./pages/UserInputStatePage";
 import { LoginPage } from "./pages/LoginPage";
+import { NotesPage } from "./pages/NotesPage";
 
 function App() {
-  return <LoginPage />;
+  return <NotesPage />;
 }
 
 export default App;
