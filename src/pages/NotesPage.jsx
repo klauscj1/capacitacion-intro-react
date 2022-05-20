@@ -67,6 +67,11 @@ export const NotesPage = () => {
     // );
   };
 
+  const handlerOnDelete = (id) => {
+    const newNotes = notes.filter((note) => note.id !== id);
+    setNotes(newNotes);
+  };
+
   return (
     <div className="main_container notes_container">
       <div className="izquierda">
@@ -82,6 +87,7 @@ export const NotesPage = () => {
           notes={notes}
           handlerChangeState={handlerChangeState}
           pendientes={pendientes}
+          handlerOnDelete={handlerOnDelete}
         />
       </div>
     </div>

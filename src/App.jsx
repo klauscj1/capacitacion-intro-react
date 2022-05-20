@@ -7,9 +7,10 @@ import { UserStatePage } from "./pages/UserStatePage";
 import { UserInputStatePage } from "./pages/UserInputStatePage";
 import { LoginPage } from "./pages/LoginPage";
 import { NotesPage } from "./pages/NotesPage";
+import { Calculadora } from "./pages/CalculadoraPage";
 
 function App() {
-  return <NotesPage />;
+  return <Calculadora />;
 }
 
 export default App;

@@ -68,3 +68,8 @@ padding: 10px;
     font-size: 12px;
     font-weight: 600;
 }
+
+.espacio{
+    margin-top: 15px;
+    z-index: 999;
+}

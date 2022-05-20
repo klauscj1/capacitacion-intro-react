@@ -1,6 +1,11 @@
 import { NoteItem } from "./NoteItem";
 
-export const NoteList = ({ notes, handlerChangeState, pendientes }) => {
+export const NoteList = ({
+  notes,
+  handlerChangeState,
+  pendientes,
+  handlerOnDelete,
+}) => {
   const completas = notes.length - pendientes;
   return (
     <>
@@ -18,6 +23,7 @@ export const NoteList = ({ notes, handlerChangeState, pendientes }) => {
               note={note}
               key={note.id}
               handlerChangeState={handlerChangeState}
+              handlerOnDelete={handlerOnDelete}
             />
           );
         })
