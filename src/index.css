@@ -18,8 +18,8 @@ code {
 }
 
 .main_container{
-  background-color: rgba(0,0,0,.8);
-  width: 100vw;
+  /* background-color: rgba(0,0,0,.8); */
+  width: 100%;
   height: 100vh;
   color: white;
   overflow-y: scroll;
@@ -108,4 +108,60 @@ input{
   padding: 5px 5px;
   border-radius: 5px;
   border: none;
+}
+
+
+.container_center{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.sideBar{
+  width: 25%;
+  padding: 0px 10px;
+  color: white;
+}
+
+.sideBar >ul{
+  list-style: none;
+  padding: 0px 0px;
+}
+
+.sideBar >ul > li{
+  width: 100%;
+  margin: 0px 5px;
+  background-color: rgba(0,0,0,.3);
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+ 
+}
+
+.sideBar >ul > li:hover{
+  background-color: rgba(0,0,0,.4);
+ 
+}
+
+.sidebar_item > a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+.main_layout{
+  background-color: rgba(0,0,0,.8);
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.wrapper{
+  width: 74%;
+  margin-left: 1%;
 }

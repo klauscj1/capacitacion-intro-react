@@ -1,7 +1,12 @@
 import { useState } from "react";
 import "../styles/login.css";
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.css";
+import { useNavigate } from "react-router-dom";
 
 export const LoginPage = () => {
+  const navigate = useNavigate();
+
   const [formValues, setFormValues] = useState({
     email: "",
     password: "",
@@ -12,6 +17,14 @@ export const LoginPage = () => {
   const handlerLoginSubmit = (event) => {
     event.preventDefault();
     console.log("Formulario ", formValues);
+    if (
+      formValues.email === "clauschochoe@gmail.com" &&
+      formValues.password === "123456"
+    ) {
+      navigate("/home");
+    } else {
+      Swal.fire("Error", "Credenciales incorrectas", "error");
+    }
   };
 
   const handlerOnChange = ({ target }) => {
